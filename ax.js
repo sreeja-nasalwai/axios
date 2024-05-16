@@ -3,7 +3,7 @@ async function getData(){
     let name1=document.getElementById("name").value;
     let age1=document.getElementById("age").value;
     let branch1=document.getElementById("bran").value;
-
+    let b1=document.getElementById("del").value
      const res = await axios.get("http://localhost:3000/students");
         const students = res.data;
 
@@ -16,7 +16,14 @@ async function getData(){
         // Populate table with student data
         students.forEach(student => {
             const row = document.createElement("tr");
-            row.innerHTML = `<td>${student.id}</td><td>${student.name}</td><td>${student.age}</td><td>${student.branch}</td>`;
+            row.innerHTML = `<td>${student.id}</td>
+            <td>${student.name}</td>
+            <td>${student.age}</td>
+            <td>${student.branch}</td>
+            <td>
+            <button onclick="delete1('${student.id}')">Delete</button>
+            <button onclick="patch1('${student.id}','${student.name}','${student.age}','${student.branch}')">Edit</button>
+            </td>`;
             tableBody.appendChild(row);
         });
 
@@ -59,6 +66,21 @@ function patchData(){
     .then((res)=>console.log(res.data))
 .catch((err)=>console.log(err));
 }
-
-
+function delete1(id){
+   
+        // let id=document.getElementById("roll").value;
+        // console.log(id)
+        axios.delete(`http://localhost:3000/students/${id}`)
+}
+function patch1(id1,name1,age1,branch1){
+    // axios.patch(`http://localhost:3000/students/${id1}`,{
+        
+    //     name:name1,
+    //     branch:branch1,
+    // })
+    document.getElementById("roll").value = id1;
+            document.getElementById("name").value = name1;
+            document.getElementById("age").value = age1;
+            document.getElementById("bran").value = branch1;
+}
 

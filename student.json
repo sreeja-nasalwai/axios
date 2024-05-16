@@ -2,26 +2,8 @@
   "students": [
     {
       "id": "1",
-      "name": "spoo",
-      "age": "12",
-      "branch": "ece"
-    },
-    {
-      "id": "2",
       "name": "sreeja",
-      "age": "",
-      "branch": "ece"
-    },
-    {
-      "id": "3",
-      "name": "bhoomi",
-      "age": "16",
-      "branch": "it"
-    },
-    {
-      "id": "4",
-      "name": "spoo",
-      "age": "19",
+      "age": "12",
       "branch": "cse"
     }
   ]
