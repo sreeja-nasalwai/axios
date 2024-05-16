@@ -1,8 +1,8 @@
 async function getData(){
-    let id1=document.getElementById("roll").value;
-    let name1=document.getElementById("name").value;
-    let age1=document.getElementById("age").value;
-    let branch1=document.getElementById("bran").value;
+    // let id1=document.getElementById("roll").value;
+    // let name1=document.getElementById("name").value;
+    // let age1=document.getElementById("age").value;
+    // let branch1=document.getElementById("bran").value;
 
      const res = await axios.get("http://localhost:3000/students");
         const students = res.data;
