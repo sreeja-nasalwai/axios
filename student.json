@@ -7,22 +7,16 @@
       "branch": "ece"
     },
     {
-      "id": "2",
-      "name": "sreeja",
-      "age": "",
-      "branch": "ece"
-    },
-    {
       "id": "3",
       "name": "bhoomi",
       "age": "16",
       "branch": "it"
     },
     {
-      "id": "4",
-      "name": "spoo",
-      "age": "19",
-      "branch": "cse"
+      "id": "5",
+      "name": "sreeja1",
+      "age": "44",
+      "branch": "civ"
     }
   ]
 }
