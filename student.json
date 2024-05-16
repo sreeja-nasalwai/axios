@@ -7,16 +7,46 @@
       "branch": "ece"
     },
     {
-      "id": "3",
-      "name": "bhoomi",
-      "age": "16",
-      "branch": "it"
-    },
-    {
       "id": "5",
       "name": "sreh",
       "age": "12",
       "branch": "civ"
+    },
+    {
+      "id": "2",
+      "name": "nami",
+      "age": "13",
+      "branch": "ds"
+    },
+    {
+      "id": "3",
+      "name": "sreeja",
+      "age": "51",
+      "branch": "ai"
+    },
+    {
+      "id": "4",
+      "name": "snig",
+      "age": "22",
+      "branch": "ml"
+    },
+    {
+      "id": "6",
+      "name": "bhoomi",
+      "age": "44",
+      "branch": "cs"
+    },
+    {
+      "id": "7",
+      "name": "aksh",
+      "age": "18",
+      "branch": "cse"
+    },
+    {
+      "id": "8",
+      "name": "alek",
+      "age": "19",
+      "branch": "ds"
     }
   ]
 }

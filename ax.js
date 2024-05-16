@@ -16,7 +16,7 @@ async function getData(){
         // Populate table with student data
         students.forEach(student => {
             const row = document.createElement("tr");
-            row.innerHTML = `<td>${student.id}</td><td>${student.name}</td><td>${student.age}</td><td>${student.branch}</td><td><button onclick="delete1(${student.id})">delete</button></td> `;
+            row.innerHTML = `<td>${student.id}</td><td>${student.name}</td><td>${student.age}</td><td>${student.branch}</td><td><i class="fa fa-trash-o" style="font-size:36px;color:red" onclick="delete1(${student.id})"></i></td> `;
             tableBody.appendChild(row);
         });
 
@@ -65,6 +65,9 @@ function delete1(id){
 .then((res)=>console.log(res.data))
 .catch((err)=>console.log(err));
 }
-
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+ }
 
 

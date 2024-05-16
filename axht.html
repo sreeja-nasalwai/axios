@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Axios rest api</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         button:hover {
             width: 50px;
@@ -15,10 +16,14 @@
             color:green;
             background-color: beige;
         }
-    
+        .table-container {
+    max-height: 300px; /* Set the maximum height for the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
         table {
             border-collapse: collapse;
             width: 100%;
+           
         }
     
         th, td {
@@ -42,7 +47,12 @@
             text-decoration: none;
             margin: 0 10px;
         }
+        
+            .dark-mode {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Black_colour.jpg/450px-Black_colour.jpg'); 
 
+              color: red;
+            }
     </style>
     
     
@@ -70,6 +80,9 @@
     <button onclick="patchData()" id="upd" class="bt">Update</button>
 </form>
 <br>
+<button onclick="myFunction()">dark mode</button>
+<br><br>
+<div class="table-container">
 <table>
     <thead>
         <tr>
@@ -84,6 +97,7 @@
         <!-- Table rows will be dynamically populated here -->
     </tbody>
 </table>
+</div>
     <script src="./ax.js"></script>
 </body>
 </html>
